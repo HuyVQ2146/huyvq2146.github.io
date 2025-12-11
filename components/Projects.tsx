@@ -8,45 +8,36 @@ export const Projects: React.FC = () => {
   const projects: Project[] = [
     {
       id: '1',
-      title: 'AI Analytics Dashboard',
-      description: 'A comprehensive dashboard visualizing real-time data using D3.js and Recharts. Integrated with Gemini API for predictive insights.',
-      technologies: ['React', 'TypeScript', 'Tailwind', 'Gemini API', 'D3.js'],
-      imageUrl: 'https://picsum.photos/id/1/600/400',
-      github: '#',
-      link: '#'
+      title: 'Financial Bank Ranking (On-going)',
+      description: 'A data science project that ranks financial banks based on various performance metrics. The project involves data collection, cleaning, analysis, and visualization to provide insights into the banking sector.',
+      technologies: ['Machine Learning', 'MySQL','Python','Excel'],
+      imageUrl: '/bankrank.png',
+      github: '#'
     },
     {
       id: '2',
-      title: 'E-Commerce Platform',
-      description: 'A headless e-commerce storefront built with Next.js and Shopify Storefront API. Features include optimistic UI updates and dark mode.',
-      technologies: ['Next.js', 'GraphQL', 'Shopify', 'Framer Motion'],
-      imageUrl: 'https://picsum.photos/id/2/600/400',
-      github: '#',
-      link: '#'
+      title: 'Houses Price Predict',
+      description: 'A ML model that predicts house prices based on a Kaggle dataset. using regression techniques.',
+      technologies: ['Machine Learning','Python', 'Jupyter Notebook', 'Kaggle'],
+      imageUrl: '/houseprice.png',
+      github: 'https://github.com/HuyVQ2146/House_Prices_Predict'
     },
+    
     {
       id: '3',
-      title: 'Task Management App',
-      description: 'Collaborative task management tool with real-time updates using WebSockets. Supports drag-and-drop kanban boards.',
-      technologies: ['React', 'Node.js', 'Socket.io', 'PostgreSQL'],
-      imageUrl: 'https://picsum.photos/id/3/600/400',
-      github: '#'
+      title: 'Pokedex',
+      description: 'A web application that allows users to explore and search for Pokémon using the PokéAPI. Features responsive design and dynamic filtering.',
+      technologies: ['HTML', 'CSS', 'JavaScript', 'PokéAPI'],
+      imageUrl: '/pokedex.png',
+      github: 'https://github.com/HuyVQ2146/PokeDex-Project'
     },
     {
       id: '4',
-      title: 'Finance Tracker',
-      description: 'Personal finance application for tracking expenses and setting budgets with interactive charts.',
-      technologies: ['Vue.js', 'Firebase', 'Chart.js'],
-      imageUrl: 'https://picsum.photos/id/4/600/400',
-      github: '#'
-    },
-    {
-      id: '5',
-      title: 'Travel Journal',
-      description: 'A digital journal to map your travels and share photo memories with friends.',
-      technologies: ['React', 'Google Maps API', 'AWS S3'],
-      imageUrl: 'https://picsum.photos/id/5/600/400',
-      github: '#'
+      title: 'Digital Clock Programme',
+      description: 'Personal clock application featuring customizable themes.',
+      technologies: ['HTML', 'CSS', 'JavaScript'],
+      imageUrl: '/digitalclock.png',
+      github: 'https://github.com/HuyVQ2146/DigitalClockProgram'
     }
   ];
 
