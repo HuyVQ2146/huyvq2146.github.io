@@ -54,7 +54,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ mobileMenuOpen, setMobileMenuO
         <div className="p-8 flex flex-col items-center border-b border-slate-200 bg-white">
           <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-white shadow-lg mb-4 relative group ring-2 ring-slate-100">
             <img
-              src="/img/me.jpg"
+              src="/me.jpg"
               alt="Profile"
               className="w-full h-full object-cover group-hover:scale-110 transition duration-500"
             />
