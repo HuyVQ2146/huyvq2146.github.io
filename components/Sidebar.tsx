@@ -20,10 +20,10 @@ export const Sidebar: React.FC<SidebarProps> = ({ mobileMenuOpen, setMobileMenuO
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     e.preventDefault();
     setMobileMenuOpen(false);
-    
+
     const targetId = href.substring(1);
     const element = document.getElementById(targetId);
-    
+
     if (element) {
       element.scrollIntoView({
         behavior: 'smooth',
@@ -38,7 +38,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ mobileMenuOpen, setMobileMenuO
     <>
       {/* Overlay for mobile */}
       {mobileMenuOpen && (
-        <div 
+        <div
           className="fixed inset-0 bg-black/40 z-40 md:hidden backdrop-blur-sm"
           onClick={() => setMobileMenuOpen(false)}
         />
@@ -53,9 +53,9 @@ export const Sidebar: React.FC<SidebarProps> = ({ mobileMenuOpen, setMobileMenuO
         {/* Profile Header */}
         <div className="p-8 flex flex-col items-center border-b border-slate-200 bg-white">
           <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-white shadow-lg mb-4 relative group ring-2 ring-slate-100">
-            <img 
-              src="./img/me.jpg" 
-              alt="Profile" 
+            <img
+              src="/img/me.jpg"
+              alt="Profile"
               className="w-full h-full object-cover group-hover:scale-110 transition duration-500"
             />
             <div className="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition duration-300"></div>
@@ -69,13 +69,13 @@ export const Sidebar: React.FC<SidebarProps> = ({ mobileMenuOpen, setMobileMenuO
           <ul className="space-y-2">
             {navItems.map((item) => (
               <li key={item.label}>
-                <a 
+                <a
                   href={item.href}
                   onClick={(e) => handleNavClick(e, item.href)}
                   className={`
                     flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-medium transition-all duration-200 group
-                    ${activeSection === item.href.substring(1) 
-                      ? 'bg-primary/10 text-primary border-r-2 border-primary' 
+                    ${activeSection === item.href.substring(1)
+                      ? 'bg-primary/10 text-primary border-r-2 border-primary'
                       : 'text-slate-600 hover:text-slate-900 hover:bg-white shadow-sm hover:shadow'}
                   `}
                 >
