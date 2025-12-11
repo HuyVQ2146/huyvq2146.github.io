@@ -20,14 +20,14 @@ export const Contact: React.FC = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {/* Gmail Box */}
         <a 
-          href="mailto:hello@example.com"
+          href="mailto:huyvq2146@gmail.com"
           className="group flex flex-col items-center p-8 bg-white border border-slate-200 rounded-xl shadow-sm hover:shadow-xl hover:border-primary/30 transition-all duration-300 hover:-translate-y-1"
         >
           <div className="w-16 h-16 bg-surface rounded-full flex items-center justify-center text-slate-400 group-hover:text-primary group-hover:bg-primary/10 transition-colors duration-300 mb-4">
             <Mail size={32} />
           </div>
           <h3 className="text-xl font-bold text-slate-900 mb-2">Email</h3>
-          <p className="text-slate-500 text-sm mb-4">hello@example.com</p>
+          <p className="text-slate-500 text-sm mb-4">huyvq2146@gmail.com</p>
           <span className="text-primary text-sm font-semibold flex items-center gap-1 group-hover:gap-2 transition-all">
             Send Message <ArrowRight size={14} />
           </span>
@@ -35,7 +35,7 @@ export const Contact: React.FC = () => {
 
         {/* LinkedIn Box */}
         <a 
-          href="#"
+          href="https://www.linkedin.com/in/vu-quang-huy-8284b4329/"
           target="_blank"
           rel="noopener noreferrer"
           className="group flex flex-col items-center p-8 bg-white border border-slate-200 rounded-xl shadow-sm hover:shadow-xl hover:border-primary/30 transition-all duration-300 hover:-translate-y-1"
@@ -52,7 +52,7 @@ export const Contact: React.FC = () => {
 
         {/* GitHub Box */}
         <a 
-          href="#"
+          href="https://github.com/HuyVQ2146"
           target="_blank"
           rel="noopener noreferrer"
           className="group flex flex-col items-center p-8 bg-white border border-slate-200 rounded-xl shadow-sm hover:shadow-xl hover:border-primary/30 transition-all duration-300 hover:-translate-y-1"

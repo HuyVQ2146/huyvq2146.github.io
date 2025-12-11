@@ -54,14 +54,14 @@ export const Sidebar: React.FC<SidebarProps> = ({ mobileMenuOpen, setMobileMenuO
         <div className="p-8 flex flex-col items-center border-b border-slate-200 bg-white">
           <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-white shadow-lg mb-4 relative group ring-2 ring-slate-100">
             <img 
-              src="https://picsum.photos/200/200?grayscale" 
+              src="./img/me.jpg" 
               alt="Profile" 
               className="w-full h-full object-cover group-hover:scale-110 transition duration-500"
             />
             <div className="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition duration-300"></div>
           </div>
           <h2 className="text-2xl font-bold text-slate-900 tracking-wide text-center">Vu Quang Huy</h2>
-          <p className="text-primary text-sm font-medium mt-1 uppercase tracking-wider text-center">Senior Frontend Engineer</p>
+          <p className="text-primary text-sm font-medium mt-1 uppercase tracking-wider text-center">Data Scientist | ML Engineer</p>
         </div>
 
         {/* Navigation */}
@@ -92,14 +92,14 @@ export const Sidebar: React.FC<SidebarProps> = ({ mobileMenuOpen, setMobileMenuO
         {/* Social Links Footer */}
         <div className="p-6 border-t border-slate-200 bg-white">
           <div className="flex justify-center gap-6">
-            <a href="mailto:hello@example.com" className="text-slate-400 hover:text-primary transition transform hover:-translate-y-1" aria-label="Email">
+            <a href="mailto:huyvq2146@gmail.com" className="text-slate-400 hover:text-primary transition transform hover:-translate-y-1" aria-label="Email">
               <Mail size={20} />
             </a>
-            <a href="#" className="text-slate-400 hover:text-primary transition transform hover:-translate-y-1" aria-label="GitHub">
-              <Github size={20} />
-            </a>
-            <a href="#" className="text-slate-400 hover:text-primary transition transform hover:-translate-y-1" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/vu-quang-huy-8284b4329/" target="_blank" className="text-slate-400 hover:text-primary transition transform hover:-translate-y-1" aria-label="LinkedIn">
               <Linkedin size={20} />
+            </a>
+            <a href="https://github.com/HuyVQ2146" target="_blank" className="text-slate-400 hover:text-primary transition transform hover:-translate-y-1" aria-label="GitHub">
+              <Github size={20} />
             </a>
           </div>
         </div>
