@@ -8,39 +8,33 @@ export const Certificates: React.FC = () => {
   const certificates: Certificate[] = [
     {
       id: '1',
-      title: 'Google Cloud Professional Cloud Architect',
-      issuer: 'Google Cloud',
-      date: 'Aug 2023',
+      title: 'Google Data Analytics Professional Certificate (On-going)',
+      issuer: 'Google',
+      date: 'Non 2026',
     },
     {
       id: '2',
-      title: 'Meta Front-End Developer Professional Certificate',
-      issuer: 'Meta',
-      date: 'Jan 2023',
+      title: 'Machine Learning Specialization',
+      issuer: 'Stanford Online, Deeplearning.AI',
+      date: 'Jul 2025',
     },
     {
       id: '3',
-      title: 'AWS Certified Solutions Architect – Associate',
-      issuer: 'Amazon Web Services',
-      date: 'Nov 2022',
+      title: 'Understanding Research Methods',
+      issuer: 'University of London',
+      date: 'Jun 2025',
     },
     {
       id: '4',
-      title: 'React Advanced Patterns',
-      issuer: 'EpicReact.Dev',
-      date: 'Mar 2022',
+      title: 'AI For Everyone',
+      issuer: 'Deeplearning.AI',
+      date: 'Apr 2025',
     },
     {
       id: '5',
-      title: 'JavaScript Algorithms and Data Structures',
-      issuer: 'freeCodeCamp',
-      date: 'Jan 2022',
-    },
-    {
-      id: '6',
-      title: 'Full Stack Web Development Bootcamp',
-      issuer: 'Udemy',
-      date: 'Oct 2021',
+      title: 'Google AI Essentials',
+      issuer: 'Google',
+      date: 'Apr 2025',
     }
   ];
 

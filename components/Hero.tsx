@@ -2,7 +2,7 @@ import React from 'react';
 import { ChevronRight } from 'lucide-react';
 
 export const Hero: React.FC = () => {
-  const techSkills = ['Python', 'C++', 'MySQL', 'Excel', 'Word', 'Powerpoint'];
+  const techSkills = ['Machine Learning','Python', 'C++', 'MySQL', 'Excel', 'Word', 'Powerpoint'];
 
   return (
     <div className="flex flex-col justify-center min-h-[60vh]">
@@ -19,12 +19,13 @@ export const Hero: React.FC = () => {
           Vu Quang Huy.
         </h1>
         <h2 className="text-4xl md:text-6xl font-bold text-secondary tracking-tight">
-          I build things for the web.
+          I give insights from data.
         </h2>
       </div>
       
-      <p className="max-w-xl text-slate-600 text-lg leading-relaxed mb-10">
-        I'm a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I'm focused on building accessible, human-centered products at <span className="text-primary font-semibold">TechCorp</span>.
+      <p className="max-w-3xl text-slate-600 text-lg leading-relaxed mb-10">
+        I'm an aspiring data scientist with a strong foundation in Python, machine learning, and statistical thinking. 
+        Currently, I'm strengthening my skills through real-world projects, advanced coursework, and consistent problem-solving to prepare for a career in <span className="text-primary font-semibold">AI</span> and <span className="text-primary font-semibold">Data Science</span>.
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-4xl">

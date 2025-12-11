@@ -8,39 +8,39 @@ export const Interests: React.FC = () => {
   const interests: Interest[] = [
     {
       id: '1',
-      name: 'Photography',
-      imageUrl: 'https://picsum.photos/seed/photography/800/600',
-      description: 'Capturing moments in street and landscape photography.'
+      name: 'Traveling',
+      imageUrl: '/traveling.jpg',
+      description: 'Exploring the world that we live in.'
     },
     {
       id: '2',
-      name: 'Music Production',
-      imageUrl: 'https://picsum.photos/seed/music/800/600',
-      description: 'Creating lo-fi beats and experimenting with synthesizers.'
+      name: 'Self-learning',
+      imageUrl: '/selflearning.jpg',
+      description: 'Learning new skills on my own.'
     },
     {
       id: '3',
-      name: 'Hiking',
-      imageUrl: 'https://picsum.photos/seed/hiking/800/600',
-      description: 'Exploring nature trails and disconnecting from tech.'
+      name: 'Leetcode',
+      imageUrl: '/leetcode.png',
+      description: 'Practicing everyday.'
     },
     {
       id: '4',
-      name: 'Specialty Coffee',
-      imageUrl: 'https://picsum.photos/seed/coffee/800/600',
-      description: 'Brewing the perfect V60 pour-over every morning.'
+      name: 'Reading',
+      imageUrl: '/reading.jpg',
+      description: 'Concentrating on improving myself.'
     },
     {
       id: '5',
-      name: 'Reading',
-      imageUrl: 'https://picsum.photos/seed/books/800/600',
-      description: 'Sci-fi novels and technical books on architecture.'
+      name: 'Photography',
+      imageUrl: '/photo.jpg',
+      description: 'Capturing moments and sceneries.'
     },
     {
       id: '6',
-      name: 'Gaming',
-      imageUrl: 'https://picsum.photos/seed/gaming/800/600',
-      description: 'Indie games and strategy classics.'
+      name: 'Music',
+      imageUrl: '/thenight.jpg',
+      description: 'Changing moods with different genres.'
     }
   ];
 
