@@ -9,31 +9,37 @@ export const Certificates: React.FC = () => {
     {
       id: '1',
       title: 'Google Data Analytics Professional Certificate (On-going)',
-      issuer: 'Google',
+      issuer: 'Coursera, Google',
       date: 'Non 2026',
     },
     {
       id: '2',
-      title: 'Machine Learning Specialization',
-      issuer: 'Stanford Online, Deeplearning.AI',
-      date: 'Jul 2025',
+      title: 'HarvardX PH125.8x: Data Science: Building Machine Learning Models',
+      issuer: 'edX, HarvardX',
+      date: 'Dec 2025',
     },
     {
       id: '3',
-      title: 'Understanding Research Methods',
-      issuer: 'University of London',
-      date: 'Jun 2025',
+      title: 'Machine Learning Specialization',
+      issuer: 'Coursera, Stanford Online, Deeplearning.AI',
+      date: 'Jul 2025',
     },
     {
       id: '4',
-      title: 'AI For Everyone',
-      issuer: 'Deeplearning.AI',
-      date: 'Apr 2025',
+      title: 'Understanding Research Methods',
+      issuer: 'Coursera, University of London',
+      date: 'Jun 2025',
     },
     {
       id: '5',
+      title: 'AI For Everyone',
+      issuer: 'Coursera, Deeplearning.AI',
+      date: 'Apr 2025',
+    },
+    {
+      id: '6',
       title: 'Google AI Essentials',
-      issuer: 'Google',
+      issuer: 'Coursera, Google',
       date: 'Apr 2025',
     }
   ];
