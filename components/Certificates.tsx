@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Award, Calendar, BadgeCheck, ChevronDown, ChevronUp, ExternalLink, Image as ImageIcon } from 'lucide-react';
 import { Certificate } from '../types';
 import { createPortal } from 'react-dom';
@@ -6,6 +6,18 @@ import { createPortal } from 'react-dom';
 export const Certificates: React.FC = () => {
   const [showAll, setShowAll] = useState(false);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (selectedImage) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+    
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [selectedImage]);
 
   const certificates: Certificate[] = [
     {
