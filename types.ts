@@ -16,6 +16,7 @@ export interface Certificate {
   issuer: string;
   date: string;
   imageUrl?: string;
+  credentialUrl?: string;
 }
 
 export interface Interest {

@@ -42,7 +42,7 @@ export const Hero: React.FC = () => {
                 <p className="font-medium">Bachelor of Computer Science (Troy Programme)</p>
                 <p className="text-sm text-slate-500 italic">(2024-2028)</p>
               </div>
-              <p className="font-medium"><span className="font-bold text-slate-900">CPA:</span> 3.41</p>
+              <p className="font-medium"><span className="font-bold text-slate-900">CPA:</span> 3.59</p>
             </div>
           </div>
 
