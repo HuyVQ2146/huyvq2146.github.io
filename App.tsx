@@ -31,7 +31,7 @@ const App: React.FC = () => {
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-col md:flex-row relative">
+    <div className="min-h-screen flex flex-col md:flex-row relative overflow-hidden">
       {/* Mobile Header */}
       <div className="md:hidden fixed top-0 w-full z-50 bg-background/90 backdrop-blur-md border-b border-slate-200 p-4 flex justify-between items-center">
         <h1 className="text-xl font-bold text-slate-900 tracking-tight">PORTFOLIO</h1>

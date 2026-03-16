@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Award, Calendar, BadgeCheck, ChevronDown, ChevronUp, ExternalLink, Image as ImageIcon } from 'lucide-react';
 import { Certificate } from '../types';
+import { createPortal } from 'react-dom';
 
 export const Certificates: React.FC = () => {
   const [showAll, setShowAll] = useState(false);
@@ -165,7 +166,7 @@ export const Certificates: React.FC = () => {
       )}
 
       {/* Lightbox for Image/PDF */}
-      {selectedImage && (
+      {selectedImage && createPortal(
         <div 
           className="fixed inset-0 z-[100] bg-black/90 flex items-center justify-center p-4 md:p-12"
           onClick={() => setSelectedImage(null)}
@@ -195,7 +196,8 @@ export const Certificates: React.FC = () => {
               </div>
             )}
           </div>
-        </div>
+        </div>,
+        document.body
       )}
     </div>
   );
