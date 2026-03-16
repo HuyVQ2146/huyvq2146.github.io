@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Award, Calendar, BadgeCheck, ChevronDown, ChevronUp, ExternalLink, Image as ImageIcon } from 'lucide-react';
 import { Certificate } from '../types';
 import { createPortal } from 'react-dom';
+import { Worker, Viewer } from '@react-pdf-viewer/core';
+import '@react-pdf-viewer/core/lib/styles/index.css';
 
 export const Certificates: React.FC = () => {
   const [showAll, setShowAll] = useState(false);
@@ -88,45 +90,34 @@ export const Certificates: React.FC = () => {
           <div key={cert.id} className="bg-white rounded-xl border border-slate-200 shadow-sm hover:shadow-lg hover:-translate-y-1 hover:border-primary/50 transition duration-300 group overflow-hidden flex flex-col">
             {/* Image/PDF Preview Area */}
             {cert.imageUrl ? (
-              <div className="relative aspect-video overflow-hidden bg-[#282828]">
+              <div className="relative aspect-video overflow-hidden bg-[#FFFFFF]">
                 {isPdf(cert.imageUrl) ? (
-                  <div className="w-full h-full relative overflow-hidden">
-                    <iframe 
-                      src={`${cert.imageUrl}#toolbar=0&navpanes=0&scrollbar=0&view=Fit`}
-                      className="absolute -top-4 -left-4 w-[calc(100%+32px)] h-[calc(100%+32px)] border-none pointer-events-none"
-                      title={cert.title}
-                      scrolling="no"
+                  <div className="w-full h-full relative overflow-hidden bg-white group">
+                    <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.4.120/build/pdf.worker.min.js">
+                      {/* Ép tất cả các div con bên trong (như rp-viewer) không được hiện scrollbar */}
+                      <div className="w-full h-full pointer-events-none scale-[1.05] [&_*]:!overflow-hidden [&_*]:!scrollbar-hide">
+                        <Viewer
+                          fileUrl={cert.imageUrl}
+                          initialPage={0}
+                        />
+                      </div>
+                    </Worker>
+                    
+                    {/* Lớp phủ chặn mọi tương tác và dùng để click mở Modal */}
+                    <div 
+                      className="absolute inset-0 z-30 cursor-pointer bg-transparent" 
+                      onClick={() => setSelectedImage(cert.imageUrl || null)}
                     />
-                    <div className="absolute inset-0 bg-transparent" /> {/* Overlay to prevent interaction with iframe in preview */}
                   </div>
                 ) : (
                   <img 
                     src={cert.imageUrl} 
                     alt={cert.title}
-                    className="w-full h-full object-contain transition duration-500 group-hover:scale-105"
-                    referrerPolicy="no-referrer"
+                    className="w-full h-full object-contain transition duration-500 group-hover:scale-105 cursor-pointer"
+                    onClick={() => setSelectedImage(cert.imageUrl || null)}
                   />
                 )}
-                <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-3">
-                  <button 
-                    onClick={() => setSelectedImage(cert.imageUrl || null)}
-                    className="p-2 bg-white/20 backdrop-blur-md rounded-full text-white hover:bg-white/40 transition"
-                    title={isPdf(cert.imageUrl) ? "View PDF" : "View Image"}
-                  >
-                    <ImageIcon size={20} />
-                  </button>
-                  {cert.credentialUrl && (
-                    <a 
-                      href={cert.credentialUrl} 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="p-2 bg-white/20 backdrop-blur-md rounded-full text-white hover:bg-white/40 transition"
-                      title="View Credential"
-                    >
-                      <ExternalLink size={20} />
-                    </a>
-                  )}
-                </div>
+                
               </div>
             ) : (
               <div className="aspect-video bg-slate-50 flex items-center justify-center text-slate-300">
