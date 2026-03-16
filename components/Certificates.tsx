@@ -92,15 +92,11 @@ export const Certificates: React.FC = () => {
                 {isPdf(cert.imageUrl) ? (
                   <div className="w-full h-full relative overflow-hidden">
                     <iframe 
-                    src={
-                      window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
-                        ? `${cert.imageUrl}#toolbar=0&navpanes=0&scrollbar=0&view=Fit`
-                        : `https://docs.google.com/viewer?url=${encodeURIComponent(cert.imageUrl || '')}&embedded=true`
-                    }
-                    className="absolute -top-4 -left-4 w-[calc(100%+32px)] h-[calc(100%+32px)] border-none pointer-events-none"
-                    title={cert.title}
-                    scrolling="no"
-                  />
+                      src={`${cert.imageUrl}#toolbar=0&navpanes=0&scrollbar=0&view=Fit`}
+                      className="absolute -top-4 -left-4 w-[calc(100%+32px)] h-[calc(100%+32px)] border-none pointer-events-none"
+                      title={cert.title}
+                      scrolling="no"
+                    />
                     <div className="absolute inset-0 bg-transparent" /> {/* Overlay to prevent interaction with iframe in preview */}
                   </div>
                 ) : (
