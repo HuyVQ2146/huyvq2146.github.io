@@ -24,11 +24,11 @@ export const Certificates: React.FC = () => {
   const certificates: Certificate[] = [
     {
       id: '1',
-      title: 'Google Data Analytics Professional Certificate (On-going)',
+      title: 'Google Data Analytics Professional Certificate',
       issuer: 'Coursera, Google',
-      date: 'Non 2026',
-      imageUrl: 'https://picsum.photos/seed/gcp/800/600',
-      credentialUrl: 'https://www.credential.net/example-gcp',
+      date: 'Mar 2026',
+      imageUrl: '/Coursera VY8COW3HR6ET.pdf',
+      credentialUrl: 'https://coursera.org/share/1abaefb2b3994441d6a2309f2f97727f',
     },
     {
       id: '2',
