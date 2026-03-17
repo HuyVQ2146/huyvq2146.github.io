@@ -8,14 +8,6 @@ export const Projects: React.FC = () => {
   const projects: Project[] = [
     {
       id: '1',
-      title: 'Financial Bank Ranking (On-going)',
-      description: 'A data science project that ranks financial banks based on various performance metrics. The project involves data collection, cleaning, analysis, and visualization to provide insights into the banking sector.',
-      technologies: ['Machine Learning', 'MySQL','Python','Excel'],
-      imageUrl: '/bankrank.png',
-      github: '#'
-    },
-    {
-      id: '2',
       title: 'Houses Price Predict',
       description: 'A ML model that predicts house prices based on a Kaggle dataset. using regression techniques.',
       technologies: ['Machine Learning','Python', 'Jupyter Notebook', 'Kaggle'],
@@ -24,7 +16,7 @@ export const Projects: React.FC = () => {
     },
     
     {
-      id: '3',
+      id: '2',
       title: 'Pokedex',
       description: 'A web application that allows users to explore and search for Pokémon using the PokéAPI. Features responsive design and dynamic filtering.',
       technologies: ['HTML', 'CSS', 'JavaScript', 'PokéAPI'],
@@ -32,7 +24,7 @@ export const Projects: React.FC = () => {
       github: 'https://github.com/HuyVQ2146/PokeDex-Project'
     },
     {
-      id: '4',
+      id: '3',
       title: 'Digital Clock Programme',
       description: 'Personal clock application featuring customizable themes.',
       technologies: ['HTML', 'CSS', 'JavaScript'],
