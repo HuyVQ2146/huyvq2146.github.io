@@ -8,15 +8,22 @@ export const Projects: React.FC = () => {
   const projects: Project[] = [
     {
       id: '1',
+      title: 'Best Industry for start-up',
+      description: 'Make data-driven decision on a Kaggle dataset.',
+      technologies: ['Data Analysis','Python', 'Jupyter Notebook', 'Kaggle'],
+      imageUrl: '/startup.png',
+      github: 'https://github.com/HuyVQ2146/best_industry_for_start_up'
+    },
+    {
+      id: '2',
       title: 'Houses Price Predict',
       description: 'A ML model that predicts house prices based on a Kaggle dataset. using regression techniques.',
       technologies: ['Machine Learning','Python', 'Jupyter Notebook', 'Kaggle'],
       imageUrl: '/houseprice.png',
       github: 'https://github.com/HuyVQ2146/House_Prices_Predict'
     },
-    
     {
-      id: '2',
+      id: '3',
       title: 'Pokedex',
       description: 'A web application that allows users to explore and search for Pokémon using the PokéAPI. Features responsive design and dynamic filtering.',
       technologies: ['HTML', 'CSS', 'JavaScript', 'PokéAPI'],
@@ -24,7 +31,7 @@ export const Projects: React.FC = () => {
       github: 'https://github.com/HuyVQ2146/PokeDex-Project'
     },
     {
-      id: '3',
+      id: '4',
       title: 'Digital Clock Programme',
       description: 'Personal clock application featuring customizable themes.',
       technologies: ['HTML', 'CSS', 'JavaScript'],

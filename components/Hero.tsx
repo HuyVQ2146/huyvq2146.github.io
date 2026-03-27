@@ -25,7 +25,7 @@ export const Hero: React.FC = () => {
       
       <p className="max-w-3xl text-slate-600 text-lg leading-relaxed mb-10">
         I'm an aspiring data scientist with a strong foundation in Python, machine learning, and statistical thinking. 
-        Currently, I'm strengthening my skills through real-world projects, advanced coursework, and consistent problem-solving to prepare for a career in <span className="text-primary font-semibold">AI</span> and <span className="text-primary font-semibold">Data Science</span>.
+        Currently, I'm strengthening my skills through real-world projects, advanced coursework, and consistent problem-solving to prepare for a career in <span className="text-primary font-semibold">Data Science</span>.
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-4xl">
