@@ -23,7 +23,7 @@ export const Projects: React.FC = () => {
       github: 'https://github.com/HuyVQ2146/House_Prices_Predict'
     },
     {
-      id: '3',
+      id: '3', 
       title: 'Pokedex',
       description: 'A web application that allows users to explore and search for Pokémon using the PokéAPI. Features responsive design and dynamic filtering.',
       technologies: ['HTML', 'CSS', 'JavaScript', 'PokéAPI'],
