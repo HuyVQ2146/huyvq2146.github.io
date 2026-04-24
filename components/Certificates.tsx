@@ -45,30 +45,6 @@ export const Certificates: React.FC = () => {
       date: 'Jul 2025',
       imageUrl: '/Coursera Q9EO9FBGL1O4.pdf',
       credentialUrl: 'https://coursera.org/share/f5e2a2918c2b47f89d16c39327c11189',
-    },
-    {
-      id: '4',
-      title: 'Understanding Research Methods',
-      issuer: 'Coursera, University of London',
-      date: 'Jun 2025',
-      imageUrl: '/Coursera TTQ7UXRLYI9P.pdf',
-      credentialUrl: 'https://coursera.org/share/116d42d1177c914b97e3f471a5845b13',
-    },
-    {
-      id: '5',
-      title: 'AI For Everyone',
-      issuer: 'Coursera, Deeplearning.AI',
-      date: 'Apr 2025',
-      imageUrl: '/Coursera 1S50G91B60D1.pdf',
-      credentialUrl: 'https://coursera.org/share/3308ce383c000a58bd98c4962613202b',
-    },
-    {
-      id: '6',
-      title: 'Google AI Essentials',
-      issuer: 'Coursera, Google',
-      date: 'Apr 2025',
-      imageUrl: '/Coursera 49UGT6KIHM6M.pdf',
-      credentialUrl: 'https://coursera.org/share/70234989f97b666e3f8c9f0388959abe',
     }
   ];
 
